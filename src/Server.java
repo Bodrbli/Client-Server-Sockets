@@ -2,14 +2,14 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Server {
+public class Server extends Thread {
 
     private static Socket clientSocket;
     private static ServerSocket server;
     private static BufferedReader in;
     private static BufferedWriter out;
 
-    public static void main(String[] args) throws IOException {
+    public void run() {
 
         try {
             try  {

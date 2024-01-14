@@ -7,7 +7,7 @@ public class Client {
     private static BufferedReader reader;
     private static BufferedReader in;
     private static BufferedWriter out;
-    public static void main(String[] args) {
+    public void go() {
         try {
             try {
                 clientSocket = new Socket("localhost", 4004);
